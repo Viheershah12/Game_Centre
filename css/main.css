@@ -1,0 +1,328 @@
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #111;
+    position: relative;
+    z-index: 2;
+}
+
+/* animating the page  */
+
+.animate-bottom {
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+/* scrolling effect */
+.bg-img {
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1 {
+    background-image: url("../img/background/bg1.jpg");
+}
+
+.img2 {
+    background-image: url("../img/background/bg2.jpg");
+}
+
+.img3 {
+    background-image: url("../img/background/bg3.jpg");
+}
+
+.img4 {
+    background-image: url("../img/background/bg4.jpg");
+}
+
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    border: 10px solid white;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* sidenav styling */
+#main {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    padding: 5px;
+    transition: margin-left .5s;
+    padding: 16px;
+    background-image: url("../img/background/menu.jpg");
+    height: 100px;
+    opacity: 0.9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main span {
+    color: white;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+#main span:hover {
+    color: blanchedalmond
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: auto;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    margin-left: 70px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: white;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* content */
+
+.content {
+    position: relative;
+    z-index: 2;
+    background-color: #111;
+    width: 100%;
+    height: 700px;
+}
+
+.title {
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    margin-left: 20px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    padding: 10px;
+}
+
+.desc {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: oblique;
+    font-family: 'Sarabun', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+
+}
+
+/* image overlay */
+
+table {
+    margin-left: 25px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 70%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: orangered;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto'sans-serif;
+    font-style: oblique;
+    font-weight: 500;
+}
+
+/* gaming stores  */
+
+.stores {
+    background-color: #111;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+/* gaming centres  */
+
+.centre {
+    background-color: #111;
+    height: 750px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+/* about me  */
+
+.about {
+    background-color: #111;
+    margin-top: -10px;
+    height: 1000px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+/* card  */
+
+.about-me
+{
+    margin-left: 60px;
+}
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards 
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    background-color: #111;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.cards .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+}
+
+.cards .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.cards .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+}
+
+.cards:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+        -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+@media all and (max-width: 500px) {
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+}
+
+.text .format 
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 500;
+}
