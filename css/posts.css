@@ -1,0 +1,157 @@
+body
+{
+    margin: 0;
+    width: 100%;
+}
+
+/* scroll effect  */
+.bg-img
+{
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1
+{
+    background-image: url("../img/victory/bg1.webp");
+}
+
+.img2
+{
+    background-image: url("../img/victory/bg2.jpg");
+}
+
+.img3
+{
+    background-image: url("../img/victory/bg3.jpg");
+}
+
+.img4
+{
+    background-image: url("../img/victory/bg4.png");
+}
+
+.bg-text
+{
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    border: 10px solid white;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 700px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* sidenav  */
+
+#main
+{
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    padding: 5px;
+    transition: margin-left .5s;
+    padding: 16px;
+    background-image: url("../img/background-consoles/bg.png");
+    height: 100px;
+    opacity: 0.9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main span 
+{
+    color: white;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+#main span:hover
+{
+    color: blanchedalmond;
+}
+
+.sidenav
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: auto;
+    transition: .5s;
+    padding-top: 60px;
+}
+
+.sidenav a 
+{
+    text-decoration: none;
+    margin-left: 70px;
+    padding: 8px 8px 8px 32px;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover
+{
+    color: white;
+}
+
+.sidenav .closebtn
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* uploads  */
+
+.table
+{
+    background-color: #111;
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    z-index: 2;
+}
+
+.pics
+{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+img 
+{
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.form
+{
+    color: white;
+    padding: 10px;
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+} 
