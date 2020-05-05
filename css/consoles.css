@@ -148,7 +148,7 @@ body {
   z-index: 2;
   background-color: #111;
   width: 100%;
-  height: 700px;
+  height: 1750px;
 }
 
 .title {
@@ -169,4 +169,63 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 15px;
+}
+
+/* image overlay   */
+
+table
+{
+  margin-left: 28px;
+}
+
+.Xbox
+{
+  margin-left: 200px;
+}
+
+.container
+{
+  position: relative;
+  width: 100%;
+}
+
+.image
+{
+  display: block;
+  width: 100%;
+  height: 70%;
+}
+
+.overlay
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: orangered;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay
+{
+  height: 100%;
+}
+
+.text 
+{
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: black;
+  font-family: 'Roboto' sans-serif;
+  font-style: oblique;
+  font-weight: 500;
 }
