@@ -3,11 +3,36 @@
 <head>
   <title>Homepage</title>
   <link rel="icon" href="img/icons/home.png">
-  <link rel="stylesheet" href="css\main.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital@1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style> 
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+</style>
 </head>
 
 <body style="cursor:pointer">
@@ -28,8 +53,8 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
       <a href="index.html">Home Page</a>
       <a href="consoles.html">Consoles</a>
-      <a href="posts.html">Posts</a>
-      <a href="premium.html">Premium Content</a>
+      <a href="posts.php">Posts</a>
+      <a href="premium.php">Premium Content</a>
     </div>
 
     <div id="fade">
@@ -211,8 +236,8 @@
 
 <script>
   function openNav() {
-    document.getElementById("mySidenav").style.width = "350px";
-    document.getElementById("main").style.marginLeft = "350px";
+    document.getElementById("mySidenav").style.width = "400px";
+    document.getElementById("main").style.marginLeft = "400px";
     document.getElementById("main").style.opacity = "0.6";
     document.getElementById("fade").style.opacity = "0.6";
   }
