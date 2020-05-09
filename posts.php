@@ -24,6 +24,7 @@
         <a href="index.html">Home Page</a>
         <a href="consoles.html">Consoles</a>
         <a href="posts.php">Posts</a>
+        <a href="../content_management/index.php">Blog Posts</a>
         <a href="premium.php">Premium Content</a>
     </div>
 

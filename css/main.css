@@ -48,7 +48,7 @@ body {
 
 /* scrolling effect */
 .bg-img {
-    height: 500px;
+    height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
