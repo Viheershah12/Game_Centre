@@ -145,6 +145,7 @@ echo '</tr></table>'
 </body>
 
 <script>
+alert("Welcome here you may post any image that you like");
 function openNav() 
 {
     document.getElementById("main").style.marginLeft = "400px"

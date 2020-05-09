@@ -10,15 +10,15 @@
             style="width:253px;height:253px;border-radius:50%;">
         </div>
         <br>
-        <div class="container">
+        <div class="container" >
             <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="username" required>
+            <input type="text"  placeholder="Enter Username" name="username"  required>
         
 
             <label for="psw">Password</label>
-            <input type="password" placeholder="Enter password" name="password" required>
+            <input type="password"  placeholder="Enter password" name="password"  required>
         
-            <button type="submit">Login</button>
+            <button type="submit"  value="Reset form">Login</button>
         </div>
     </form>
 </div>
@@ -26,8 +26,12 @@
 <?php
 if(isset($_GET['ERR']))
 {
-    echo 'incorrect username or password';
+    $message = "Incorrect username or password, kindly try again";
+    echo '<script type="text/javascript">alert("'.$message.'")</script>';
 }
 ?>
 </body>
+<script>
+alert("If your dont have an account kindly email the admin on shahviheer@gmail.com");
+</script>
 </html>

@@ -39,7 +39,7 @@ html
     background-position: center;
     background-size: cover;
     background-image: url();
-    height: 400px;
+    height: 50%;
 }
 
 .img1
@@ -50,16 +50,6 @@ html
 .img2
 {
     background-image: url("../img/premium/2.jpg");
-}
-
-.img3
-{
-    background-image: url("../img/premium/3.jpg");
-}
-
-.img4
-{
-    background-image: url("../img/premium/4.jpg");
 }
 
 .bg-text
@@ -86,6 +76,7 @@ html
     position: -webkit-sticky;
     position: sticky;
     z-index: 999;
+    top: 0;
     height: 100px;
     font-weight: bold;
     padding: 16px;
@@ -152,7 +143,7 @@ html
     position: relative;
     z-index: 2;
     width: 100%;
-    height: 400px;
+    height: 1400px;
     background-color: #111;
 }
 

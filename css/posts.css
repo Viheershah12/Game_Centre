@@ -42,7 +42,7 @@ body
 /* scroll effect  */
 .bg-img
 {
-    height: 400px;
+    height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
