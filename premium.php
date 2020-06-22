@@ -10,7 +10,9 @@
 </head>
 <body style="cursor:pointer">
 <?php
-if (isset($_COOKIE['users'])) {
+require 'config.php';
+if(isset($_SESSION['username'])){
+    $userLoggedIn = $_SESSION['username'];
     ?>
     <div class="bg-img img1"></div>
     <div class="bg-img img2"></div>
@@ -59,7 +61,7 @@ if (isset($_COOKIE['users'])) {
 }
 else
 {
-    include 'login.php';
+    header("Location: login.php");
 }
 ?>
 
